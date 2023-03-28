@@ -9,8 +9,8 @@ import MetodosAbiertos.SecanteParo as Secante
 # b=float(input("ingrese el segundo numero del intervalo:"))
 # print(RegulaFalsi.RegulaFalsi(Funciones.f,a,b,100))
 # print(Biseccion.Biseccion(Funciones.f,a,b,100))
-x=float(input("ingrese el x inicial:"))
+# x=float(input("ingrese el x inicial:"))
 # print(PuntoFijo.PuntoFijo(Funciones.f,Funciones.gPrima,x))
 # print(Newton.NewtonRaphson(Funciones.g,Funciones.gPrima,x))
-print(Secante.Secante(Funciones.f,x))
+# print(Secante.Secante(Funciones.f,x))
 
