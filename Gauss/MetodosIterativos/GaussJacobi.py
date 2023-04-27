@@ -14,9 +14,11 @@ def GaussJacobi(Matriz,Resultados,VectorInicial=None,Error=1,VueltasMinimas=100,
                     suma-=Matriz[i][j]*VectorInicial[j]
             VectorInicial[i]=VectorX[i]
             VectorX[i]=suma/Matriz[i][i]
-            a=(((VectorX[i]-VectorInicial[i])/VectorX[i])*100)
-            if -Error<(((VectorX[i]-VectorInicial[i])/VectorX[i])*100)<Error and contadorVueltas>=VueltasMinimas:
-                contadorError+=1
+            try:
+                if -Error<(((VectorX[i]-VectorInicial[i])/VectorX[i])*100)<Error and contadorVueltas>=VueltasMinimas:
+                    contadorError+=1
+            except:
+                pass
         if contadorError==n or contadorVueltas>VueltasMaximas:
             break
     # Prueba=[0]*n

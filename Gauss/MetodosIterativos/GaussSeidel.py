@@ -14,7 +14,6 @@ def GaussSeidel(Matriz,Resultados,VectorInicial=None,Error=1,VueltasMinimas=100,
                     suma-=Matriz[i][j]*VectorX[j]
             VectorInicial[i]=VectorX[i]
             VectorX[i]=suma/Matriz[i][i]
-            a=(((VectorX[i]-VectorInicial[i])/VectorX[i])*100)
             if -Error<(((VectorX[i]-VectorInicial[i])/VectorX[i])*100)<Error and contadorVueltas>=VueltasMinimas:
                 contadorError+=1
         if contadorError==n or contadorVueltas>VueltasMaximas:
