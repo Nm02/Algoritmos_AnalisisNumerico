@@ -32,5 +32,6 @@ def RegulaFalsi(f,a,b):
         print("No se puede derterminar si hay raices en el intervalo con el metodo de regula falsi")
         return None
 
-# a=int(input("ingrese el primer numero(a):"))
-# b=int(input("ingrese el segundo numero(b):"))
+a=int(input("ingrese el primer numero(a):"))
+b=int(input("ingrese el segundo numero(b):"))
+RegulaFalsi(lambda x:x**2-2,a,b)

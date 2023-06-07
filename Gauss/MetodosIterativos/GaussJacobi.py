@@ -32,8 +32,13 @@ def GaussJacobi(Matriz,Resultados,VectorInicial=None,Error=1,VueltasMinimas=100,
 
     return VectorX
 
-# Matriz=[[3,-0.1,-0.2],
-#         [0.1,7,-0.3],
-#         [0.3,-0.2,10]]
-# Resultados=[7.85,-19.3,71.4]
-# print(GaussJacobi(Matriz,Resultados))
+if __name__=="__main__":
+    Matriz=[[0.2,1.3,-4,1.25,5],
+            [0.03,0.2,-0.6,0.19,0.75],
+            [0.19,1.24,-3.82,0.19,4.77],
+            [0.29,1.88,-5.78,1.81,7.23],
+            [-0.06,-0.39,1.2,-0.38,-1.5]]
+    Resultados=[8,-2.4,1.2,7.63,11.56]
+    # GaussJordan(Matriz,Resultados)
+    print(GaussJacobi(Matriz,Resultados))
+    # print(Matriz)

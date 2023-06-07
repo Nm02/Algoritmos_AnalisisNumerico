@@ -9,14 +9,14 @@ import MetodosAbiertos.PuntoFijoParoError as PuntoFijo
 import MetodosAbiertos.SecanteParoError as Secante
 
 """Ejercicio 2"""
-# def f(x):
-#     return math.cos(4*x-2)+math.exp(1-x)
+def f(x):
+    return math.cos(4*x-2)+math.exp(1-x)
 
-# a=0.8
-# b=1.2
-# E=10*math.exp(-4)
-# print(biseccion.Biseccion(f,a,b,E))
-# print(RegulaFalsi.RegulaFalsi(f,a,b,E))
+a=0.8
+b=1.2
+E=10*math.exp(-4)
+print(biseccion.Biseccion(f,a,b,E))
+print(RegulaFalsi.RegulaFalsi(f,a,b,E))
 
 
 
